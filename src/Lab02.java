@@ -32,7 +32,5 @@ public class Lab02 {
         philips.showDisplay();
         philips.sensorPm(21);
         philips.showDisplay();
-
-
     }
 }

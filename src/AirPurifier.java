@@ -39,6 +39,4 @@ public class AirPurifier {
         this.serialNum = serialNum;
         setOverallCount();
     }
-
-
 }
