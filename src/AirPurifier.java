@@ -1,5 +1,4 @@
 
-
 public class AirPurifier {
     //class variables
     private static int overallCount;
