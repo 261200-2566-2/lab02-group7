@@ -1,4 +1,5 @@
 
+
 public class AirPurifier {
     //class variables
     private static int overallCount;
@@ -50,4 +51,5 @@ public class AirPurifier {
         setOverallCount();
         System.out.println("(" + name + " " + model + " is made!!!!)");
     }
+
 }
