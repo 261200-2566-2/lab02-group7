@@ -1,8 +1,6 @@
-import java.sql.SQLOutput;
-
 public class AirPurifier {
     //class variables
-    static int overallCount;
+    private static int overallCount;
     //instance variables
     String model;
     String serialNum;
