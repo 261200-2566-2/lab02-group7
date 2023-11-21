@@ -1,7 +1,7 @@
 
 public class AirPurifier {
     //class variables
-    static int overallCount;
+    private static int overallCount;
 
     //instance variables
     String name;
@@ -12,7 +12,7 @@ public class AirPurifier {
     boolean _switch = false;
 
     //class methods
-    static void setOverallCount(){
+    private static void setOverallCount(){
         overallCount++;
     }
     static void printOverAll(){
