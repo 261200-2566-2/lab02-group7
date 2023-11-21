@@ -1,15 +1,18 @@
+
 public class AirPurifier {
     //class variables
     private static int overallCount;
+
     //instance variables
+    String name;
     String model;
     String serialNum;
     String color_case;
-    int pm;
-    boolean _switch;
+    int AQI;
+    boolean _switch = false;
 
     //class methods
-    static void setOverallCount(){
+    private static void setOverallCount(){
         overallCount++;
     }
     static void printOverAll(){
@@ -18,23 +21,34 @@ public class AirPurifier {
     //instance methods
     public void switchPushing(){
         _switch = !_switch;
+        System.out.println("(switch is pushed!!!!!)");
     }
     public void showDisplay(){
-        System.out.println("status on/off " + _switch);
-        System.out.println("pm " + pm);
+        if (_switch){
+            System.out.println("status: on");
+            System.out.println("AQI: " + AQI);
+        }
+        else System.out.println("status: off");
+
     }
     public void sensorPm(int pm){
-        this.pm = pm;
+        this.AQI = pm;
+        System.out.println("(sensor detected !!!!)");
     }
+
     public void showModel(){
-        System.out.println("Model Name "+ model);
-        System.out.println("Serial Number "+serialNum);
-        System.out.println("Color "+color_case);
+        System.out.println("Model Name: "+ model);
+        System.out.println("Serial Number: "+serialNum);
+        System.out.println("Color: "+color_case);
     }
-    AirPurifier(String model,String color,String serialNum){
+    // construct
+    AirPurifier(String name,String model,String color,String serialNum){
+        this.name = name;
         this.model =model ;
         this.color_case = color ;
         this.serialNum = serialNum;
         setOverallCount();
+        System.out.println("(" + name + " " + model + " is made!!!!)");
     }
+
 }
